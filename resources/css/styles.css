@@ -188,7 +188,16 @@ a {
 
 .fit-or-big .home-down-arrow {
   height: 4vh;
-  width: auto;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 32vh;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.fit-or-big .home-down-arrow:hover {
+  top: 32.5vh;
 }
 
 /* Footer */

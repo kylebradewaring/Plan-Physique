@@ -155,7 +155,14 @@ a {
     }
     .home-down-arrow {
         height: 4vh;
-        width: auto;
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        top: 32vh;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            top: 32.5vh;
+        }
     }
 }
 
