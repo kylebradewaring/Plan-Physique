@@ -38,6 +38,7 @@ p {
   font-weight: 200;
   font-style: normal;
   font-size: 1em;
+  color: #3d3f43;
 }
 
 a {
@@ -132,6 +133,7 @@ a {
   height: 40vh;
   border-radius: 100%;
   display: block;
+  border: #eeeeee solid 10px;
 }
 
 .fit-or-big .images-container .img-container {
@@ -227,6 +229,73 @@ a {
   .fit-or-big .images-container .img-container .fit-container .fit-text, .fit-or-big .images-container .img-container .fit-container .big-text, .fit-or-big .images-container .img-container .big-container .fit-text, .fit-or-big .images-container .img-container .big-container .big-text {
     font-size: 3em;
   }
+}
+
+/* What We Do Page */
+.what-we-do {
+  min-height: 100vh;
+}
+
+/* About Me Page */
+.about-me {
+  max-width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  min-height: 100vh;
+}
+
+.about-me h1 {
+  display: block;
+  padding-top: 15vh;
+  text-align: left;
+  color: #23374d;
+  font-size: 4em;
+  margin-bottom: 5vh;
+}
+
+.about-me .desc-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  float: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .desc-img p {
+  text-align: left;
+  font-size: 2em;
+  font-weight: 300;
+  max-width: 40vw;
+  margin: 5vh 15vh 5vh 0;
+}
+
+.about-me .desc-img a {
+  color: #eeeeee;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background: linear-gradient(120deg, #1089ff, #85c2ff);
+  padding: 0.25em 0.5em;
+  border-radius: 30px;
+}
+
+.about-me .desc-img a:hover {
+  color: #23374d;
+}
+
+.about-me .desc-img img {
+  border-radius: 100%;
+  position: relative;
+  border: #eeeeee solid 10px;
+}
+
+/* Contact Page */
+.contact {
+  min-height: 100vh;
 }
 
 /* Footer */
