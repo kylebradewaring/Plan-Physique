@@ -66,7 +66,7 @@ a {
 
 #nav-bar .nav-logo {
   max-height: 7vh;
-  margin-left: 2vh;
+  margin-left: 1vw;
 }
 
 #nav-bar ul {
@@ -74,14 +74,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 5vh;
+  margin-right: 2vh;
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }
 
 #nav-bar ul a {
   text-decoration: none;
-  padding: 0 2vh;
+  padding: 0 1vw;
   font-family: interstate, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -93,6 +93,16 @@ a {
 
 #nav-bar ul a:hover {
   color: #1089ff;
+}
+
+@media only screen and (max-width: 1300px) {
+  #nav-bar ul {
+    margin-right: 1vw;
+  }
+  #nav-bar ul a {
+    padding: 0 1vw;
+    font-size: 1.2em;
+  }
 }
 
 /* landing Page */
@@ -187,30 +197,36 @@ a {
   color: #eeeeee;
 }
 
+.fit-or-big .personalised {
+  display: block;
+  position: relative;
+  top: 30vh;
+}
+
 .fit-or-big .personalised h2 {
   text-align: center;
-  position: relative;
-  top: 38vh;
+  margin: 2vh 0;
 }
 
 .fit-or-big .personalised .home-down-arrow {
   height: 4vh;
   margin: 0 auto;
   display: block;
-  position: relative;
-  top: 40.5vh;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
 .fit-or-big .personalised .home-down-arrow:hover {
-  top: 41vh;
+  -webkit-transform: translate(0, 0.5vh);
+          transform: translate(0, 0.5vh);
 }
 
 @media only screen and (max-width: 1300px) {
   .fit-or-big h1 {
     font-size: 3em;
     top: 10vh;
+    max-width: 80%;
+    margin: 0 auto;
   }
   .fit-or-big .images-container {
     top: 12.5vh;
@@ -225,9 +241,22 @@ a {
   }
   .fit-or-big .images-container .img-container .fit-container, .fit-or-big .images-container .img-container .big-container {
     opacity: 1;
+    background-color: rgba(32, 32, 32, 0.5);
   }
   .fit-or-big .images-container .img-container .fit-container .fit-text, .fit-or-big .images-container .img-container .fit-container .big-text, .fit-or-big .images-container .img-container .big-container .fit-text, .fit-or-big .images-container .img-container .big-container .big-text {
     font-size: 3em;
+  }
+  .fit-or-big .personalised {
+    top: 10%;
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .fit-or-big .personalised h2 {
+    font-size: 2em;
+  }
+  .fit-or-big .personalised .home-down-arrow {
+    height: 2vh;
   }
 }
 
@@ -281,9 +310,10 @@ a {
   background: linear-gradient(120deg, #1089ff, #85c2ff);
   padding: 0.25em 0.5em;
   border-radius: 30px;
+  position: .about-me .desc-img a;
 }
 
-.about-me .desc-img a:hover {
+.about-me .desc-img a :hover {
   color: #23374d;
 }
 
