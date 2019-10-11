@@ -9,14 +9,12 @@ Colours:
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* General Styles */
 #page-container {
-  /*background-color: #eeeeee;*/
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#93c9ff), color-stop(60%, #eeeeee));
-  background-image: linear-gradient(180deg, #93c9ff 0%, #eeeeee 60%);
 }
 
 h1 {
@@ -24,6 +22,7 @@ h1 {
   font-weight: 800;
   font-style: normal;
   font-size: 5em;
+  color: #23374d;
 }
 
 h2 {
@@ -31,13 +30,30 @@ h2 {
   font-weight: 500;
   font-style: normal;
   font-size: 3em;
+  color: #23374d;
+}
+
+h3 {
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5em;
+  color: #23374d;
+}
+
+h4 {
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2em;
+  color: #23374d;
 }
 
 p {
   font-family: interstate, sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #3d3f43;
 }
 
@@ -81,6 +97,7 @@ a {
 
 #nav-bar ul a {
   text-decoration: none;
+  text-align: center;
   padding: 0 1vw;
   font-family: interstate, sans-serif;
   font-weight: 300;
@@ -108,6 +125,7 @@ a {
 /* landing Page */
 .fit-or-big {
   height: 100vh;
+  background-image: linear-gradient(160deg, #eeeeee 50%, #1089ff 50.05%);
 }
 
 .fit-or-big h1 {
@@ -141,9 +159,11 @@ a {
 
 .fit-or-big .images-container img {
   height: 40vh;
-  border-radius: 100%;
+  border-radius: 20px;
   display: block;
-  border: #eeeeee solid 10px;
+  -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
+          box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
+  /* border: #ffffff solid 10px; */
 }
 
 .fit-or-big .images-container .img-container {
@@ -156,7 +176,7 @@ a {
   transition: .2s ease-in-out;
   position: absolute;
   text-align: center;
-  border-radius: 100%;
+  border-radius: 20px;
   width: 100%;
   height: 100%;
   top: 50%;
@@ -197,6 +217,10 @@ a {
   color: #eeeeee;
 }
 
+.fit-or-big .images-container .img-container .fit-container .fit-text, .fit-or-big .images-container .img-container .big-container .fit-text {
+  color: #1089ff;
+}
+
 .fit-or-big .personalised {
   display: block;
   position: relative;
@@ -206,6 +230,7 @@ a {
 .fit-or-big .personalised h2 {
   text-align: center;
   margin: 2vh 0;
+  color: #eeeeee;
 }
 
 .fit-or-big .personalised .home-down-arrow {
@@ -219,6 +244,103 @@ a {
 .fit-or-big .personalised .home-down-arrow:hover {
   -webkit-transform: translate(0, 0.5vh);
           transform: translate(0, 0.5vh);
+}
+
+.introduction {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2%, #1089ff), color-stop(15%, #eeeeee));
+  background-image: linear-gradient(180deg, #1089ff 2%, #eeeeee 15%);
+  background-color: #eeeeee;
+  width: 100%;
+  padding: 2vh 0;
+}
+
+.introduction .summary-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 80%;
+  padding-top: 10vh;
+  margin: 13vh auto 5vh auto;
+}
+
+.introduction .summary-container h3 {
+  text-align: center;
+  color: #23374d;
+  font-weight: 600;
+  padding: 5vh 0 1vh 0;
+}
+
+.introduction .summary-container p {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.introduction .item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 80%;
+  margin: 0 auto;
+  height: 100%;
+  margin-bottom: 5vh;
+}
+
+.introduction .item-container .item1, .introduction .item-container .item2, .introduction .item-container .item3 {
+  min-width: 350px;
+  max-width: 30%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
+          box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
+  margin-bottom: 2vh;
+}
+
+.introduction .item-container .item1 img, .introduction .item-container .item2 img, .introduction .item-container .item3 img {
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.introduction .item-container .item1 .item-text, .introduction .item-container .item2 .item-text, .introduction .item-container .item3 .item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2% auto 5% auto;
+  max-width: 80%;
+}
+
+.introduction .item-container .item1 .item-text h4, .introduction .item-container .item2 .item-text h4, .introduction .item-container .item3 .item-text h4 {
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.introduction .item-container .item1 .item-text p, .introduction .item-container .item2 .item-text p, .introduction .item-container .item3 .item-text p {
+  text-align: center;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -257,6 +379,21 @@ a {
   }
   .fit-or-big .personalised .home-down-arrow {
     height: 2vh;
+  }
+  .introduction .summary-container h3 {
+    font-size: 2em;
+  }
+  .introduction .summary-container p {
+    font-size: 1.2em;
+  }
+  .introduction .item-container .item1 .item-text, .introduction .item-container .item2 .item-text, .introduction .item-container .item3 .item-text {
+    max-width: 90%;
+  }
+  .introduction .item-container .item1 .item-text h4, .introduction .item-container .item2 .item-text h4, .introduction .item-container .item3 .item-text h4 {
+    font-size: 1.5em;
+  }
+  .introduction .item-container .item1 .item-text p, .introduction .item-container .item2 .item-text p, .introduction .item-container .item3 .item-text p {
+    font-size: 1.2em;
   }
 }
 
@@ -310,10 +447,9 @@ a {
   background: linear-gradient(120deg, #1089ff, #85c2ff);
   padding: 0.25em 0.5em;
   border-radius: 30px;
-  position: .about-me .desc-img a;
 }
 
-.about-me .desc-img a :hover {
+.about-me .desc-img a:hover {
   color: #23374d;
 }
 
@@ -331,14 +467,15 @@ a {
 /* Footer */
 footer {
   background-color: #23374d;
-  height: 10vh;
-  padding: 4vh 0 2vh 0;
+  height: auto;
+  padding: 2vh 0 2vh 0;
 }
 
 footer p {
   text-align: center;
   color: #eeeeee;
   padding: 0.5vh;
+  font-size: 1em;
 }
 
 footer a {
