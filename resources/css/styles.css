@@ -112,12 +112,12 @@ a {
   color: #1089ff;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1440px) {
   #nav-bar {
-    height: 10vw;
+    height: 8vh;
   }
   #nav-bar .nav-logo {
-    max-height: 8vw;
+    max-height: 7vh;
   }
   #nav-bar ul {
     margin-right: 1vw;
@@ -317,7 +317,7 @@ a {
           align-items: stretch;
   -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
           box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
 }
 
 .introduction .item-container .item1 img, .introduction .item-container .item2 img, .introduction .item-container .item3 img {
@@ -349,7 +349,7 @@ a {
   text-align: center;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1440px) {
   .fit-or-big h1 {
     font-size: 2.5em;
     top: 10vh;

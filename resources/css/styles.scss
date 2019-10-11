@@ -102,11 +102,11 @@ a {
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1440px) {
     #nav-bar {
-        height: 10vw;
+        height: 8vh;
         .nav-logo {
-            max-height: 8vw;
+            max-height: 7vh;
         }
         ul {
             margin-right: 1vw;
@@ -251,7 +251,7 @@ a {
             border-radius: 15px;
             align-items: stretch;
             box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.53);
-            margin-bottom: 2vh;
+            margin-bottom: 4vh;
             img {
                 max-width: 100%;
                 border-radius: 15px 15px 0 0;
@@ -275,7 +275,7 @@ a {
 }
 
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1440px) {
     .fit-or-big {
         h1 {
             font-size: 2.5em;
