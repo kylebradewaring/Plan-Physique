@@ -113,6 +113,12 @@ a {
 }
 
 @media only screen and (max-width: 1300px) {
+  #nav-bar {
+    height: 10vw;
+  }
+  #nav-bar .nav-logo {
+    max-height: 8vw;
+  }
   #nav-bar ul {
     margin-right: 1vw;
   }
@@ -345,7 +351,7 @@ a {
 
 @media only screen and (max-width: 1300px) {
   .fit-or-big h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     top: 10vh;
     max-width: 80%;
     margin: 0 auto;
@@ -357,8 +363,8 @@ a {
     margin-bottom: 2vh;
   }
   .fit-or-big .images-container .img-container img {
-    height: 30vh;
-    width: 30vh;
+    height: 28vh;
+    width: 28vh;
     display: block;
   }
   .fit-or-big .images-container .img-container .fit-container, .fit-or-big .images-container .img-container .big-container {
