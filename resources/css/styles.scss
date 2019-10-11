@@ -18,6 +18,7 @@ Colours:
 
 #page-container {
     min-height: 100vh;
+    background-color: #eeeeee;
 }
 
 h1 { 
@@ -353,6 +354,7 @@ a {
     margin: 0 auto;
     position: relative;
     min-height: 100vh;
+    background-color: #eeeeee;
     h1 {
         display: block;
         padding-top: 15vh;
@@ -395,6 +397,11 @@ a {
 
 .contact {
     min-height: 100vh;
+    background-color: #eeeeee;
+    h3 {
+        padding-top: 10vh;
+        margin-left: 2vw;
+    }
 }
 
 /* Footer */
