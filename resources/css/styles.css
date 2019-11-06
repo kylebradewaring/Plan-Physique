@@ -401,6 +401,7 @@ a {
   }
   .introduction .item-container .item1 .item-text h4, .introduction .item-container .item2 .item-text h4, .introduction .item-container .item3 .item-text h4 {
     font-size: 1.5em;
+    color: #290a0f;
   }
   .introduction .item-container .item1 .item-text p, .introduction .item-container .item2 .item-text p, .introduction .item-container .item3 .item-text p {
     font-size: 1.2em;
@@ -437,7 +438,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  float: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -474,7 +474,51 @@ a {
 /* Contact Page */
 .contact {
   min-height: 100vh;
+  max-width: 80vw;
+  margin: 0 auto;
   background-color: #ffffff;
+}
+
+.contact .flex-container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  top: 18vh;
+}
+
+.contact .flex-container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  width: 20%;
+  min-width: 400px;
+  background-color: #F2F4F3;
+  padding: 1vw;
+  margin: 1vw 1vw;
+  -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
+          box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
+}
+
+.contact .flex-container .info img {
+  max-width: 3.5em;
+  margin-right: 1vw;
+}
+
+.contact .flex-container .info .info1 {
+  display: block;
 }
 
 .contact h3 {
