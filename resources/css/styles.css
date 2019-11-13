@@ -441,14 +441,18 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 8vh;
 }
 
 .about-me .desc-img p {
   text-align: left;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 300;
-  max-width: 40vw;
-  margin: 5vh 15vh 5vh 0;
+  width: 40vw;
+  min-width: 400px;
+  margin: 0 auto;
 }
 
 .about-me .desc-img a {
@@ -469,6 +473,55 @@ a {
           box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
   border-radius: 20px;
   position: relative;
+  width: 25vw;
+  min-width: 400px;
+}
+
+.about-me .interests {
+  margin: 3vh 0;
+}
+
+.about-me .interests .interests-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-me .interests .interests-main .block {
+  width: 40%;
+  min-width: 400px;
+}
+
+.about-me .interests .interests-main .block .interest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
+          box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
+  margin: 2vh 0 0 0;
+  padding: 1vh 1vw;
+}
+
+.about-me .interests .interests-main .block .interest img {
+  width: 15%;
+  margin: 0 3vw;
+}
+
+.about-me .interests .interests-main .block .interest p {
+  font-weight: 500;
+  font-size: 2.5em;
 }
 
 /* Contact Page */

@@ -370,12 +370,15 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 8vh;
         p {
             text-align: left;
-            font-size: 2em;
+            font-size: 1.5em;
             font-weight: 300;
-            max-width: 40vw;
-            margin: 5vh 15vh 5vh 0;
+            width: 40vw;
+            min-width: 400px;
+            margin: 0 auto;
         }
         a {
             color: #ffffff;
@@ -391,8 +394,39 @@ a {
             box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.53);
             border-radius: 20px;
             position: relative;
+            width: 25vw;
+            min-width: 400px;
         }
     }
+    .interests {
+        margin: 3vh 0;
+        .interests-main {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .block {
+                width: 40%;
+                min-width: 400px;
+                .interest {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.53);
+                    margin: 2vh 0 0 0;
+                    padding: 1vh 1vw;
+                    img {
+                        width: 15%;
+                        margin: 0 3vw;
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
+    }    
 }
 
 /* Contact Page */
