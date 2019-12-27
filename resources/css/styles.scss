@@ -1,6 +1,6 @@
 /*
 Colours:
-    Background White: #eeeeee;
+    Background White: #ffffff;
     Nav-Bar White: #e5e5e5;
     Mid-Blue: #1089ff;
     Dark-blue: #23374d;
@@ -97,8 +97,7 @@ a {
                 text-align: center;
                 padding: 0 1vw;
                 font-family: interstate, sans-serif;
-                font-weight: 300;
-                font-style: normal;
+                font-weight: 500;
                 font-size: 1em;
                 color: #5A1421;
                 transition: 0.2s ease-in-out;
@@ -116,16 +115,17 @@ a {
     display: block;
     margin: 1vh auto;
     width: 30vw;
+    max-width: 180px;
 }
 .fit-or-big {
     min-height: 95vh;
     padding-bottom: 2vh;
-    background-image: linear-gradient(160deg, #ffffff 40%, #5A1421 40.05%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 10.5%, rgba(90,20,33,1) 10.55%);
     .header-main {
         width: 80vw;
         margin: 0 auto;
         h1 {
-            color: #290a0f;
+            color: #ffffff;
             margin: 2vh auto;
             text-align: center;
             position: relative;
@@ -140,25 +140,20 @@ a {
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        width: 60vw;
+        width: 100%;
         margin: 0 auto;
         position: relative;
         img {
-            width: 58vw;
-            height: 58vw;
-            border-radius: 15px;
+            width: 100%;
+            height: 60vw;
             display: block;
-            box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.53);
-            /* border: #ffffff solid 10px; */
         }
         .img-container {
             position: relative;
             display: block;
-            margin-bottom: 2vh;
             .fit-container, .big-container {
                 position: absolute;
                 text-align: center;
-                border-radius: 20px;
                 width: 100%;
                 height: 100%;
                 top: 50%;
@@ -169,7 +164,6 @@ a {
                 align-items: center;
                 position: absolute;
                 text-align: center;
-                border-radius: 20px;
                 width: 100%;
                 height: 100%;
                 top: 50%;
@@ -184,7 +178,6 @@ a {
                 a {
                     width: 100%;
                     height: 100%;
-                    border-radius: 100%;
                     position: absolute;
                 }
                 .big-text, .fit-text {
@@ -204,6 +197,7 @@ a {
     .personalised {
         display: block;
         position: relative;
+        margin-top: 2.5vh;
         bottom: 1%;
         h2 {
             text-align: center;
@@ -260,12 +254,19 @@ a {
             width: 100%;
             background-color: #ffffff;
             border-radius: 15px;
-            align-items: stretch;
+            align-items: center;
+            justify-content: center;
             box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.53);
             margin-bottom: 4vh;
-            img {
-                width: 100%;
-                border-radius: 15px 15px 0 0;
+            .home-img-wrap {
+                width: 90%;
+                height: 40%;
+                margin: 0 auto;
+                padding: 5%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
             .item-text {
                 display: flex;
@@ -490,6 +491,9 @@ footer {
 /* Tablet-Landscape 992px */ 
 
 @media only screen and (min-width: 992px) and (orientation: landscape) {
+    .fit-or-big {
+        background-image: linear-gradient(160deg, #ffffff 50%, #5A1421 50.05%);
+    }
     .about-me {
         .about-me-info {
             .desc-img {
@@ -520,8 +524,17 @@ footer {
         .images-container {
             justify-content: space-between;
             img {
-                width: 40vh;
-                height: 40vh;
+                width: 45vh;
+                height: 45vh;
+            }
+        }
+        .personalised {
+            h2 {
+                margin-top: 3vh;
+                font-size: 1.5em;
+            }
+            .home-down-arrow {
+                height: 3vh;
             }
         }
     }

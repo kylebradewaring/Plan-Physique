@@ -1,6 +1,6 @@
 /*
 Colours:
-    Background White: #eeeeee;
+    Background White: #ffffff;
     Nav-Bar White: #e5e5e5;
     Mid-Blue: #1089ff;
     Dark-blue: #23374d;
@@ -109,8 +109,7 @@ a {
   text-align: center;
   padding: 0 1vw;
   font-family: interstate, sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: 500;
   font-size: 1em;
   color: #5A1421;
   -webkit-transition: 0.2s ease-in-out;
@@ -127,12 +126,14 @@ a {
   display: block;
   margin: 1vh auto;
   width: 30vw;
+  max-width: 180px;
 }
 
 .fit-or-big {
   min-height: 95vh;
   padding-bottom: 2vh;
-  background-image: linear-gradient(160deg, #ffffff 40%, #5A1421 40.05%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10.5%, white), color-stop(10.55%, #5a1421));
+  background: linear-gradient(180deg, white 10.5%, #5a1421 10.55%);
 }
 
 .fit-or-big .header-main {
@@ -141,7 +142,7 @@ a {
 }
 
 .fit-or-big .header-main h1 {
-  color: #290a0f;
+  color: #ffffff;
   margin: 2vh auto;
   text-align: center;
   position: relative;
@@ -163,31 +164,25 @@ a {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 60vw;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
 .fit-or-big .images-container img {
-  width: 58vw;
-  height: 58vw;
-  border-radius: 15px;
+  width: 100%;
+  height: 60vw;
   display: block;
-  -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
-          box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
-  /* border: #ffffff solid 10px; */
 }
 
 .fit-or-big .images-container .img-container {
   position: relative;
   display: block;
-  margin-bottom: 2vh;
 }
 
 .fit-or-big .images-container .img-container .fit-container, .fit-or-big .images-container .img-container .big-container {
   position: absolute;
   text-align: center;
-  border-radius: 20px;
   width: 100%;
   height: 100%;
   top: 50%;
@@ -204,7 +199,6 @@ a {
           align-items: center;
   position: absolute;
   text-align: center;
-  border-radius: 20px;
   width: 100%;
   height: 100%;
   top: 50%;
@@ -222,7 +216,6 @@ a {
 .fit-or-big .images-container .img-container .fit-container a, .fit-or-big .images-container .img-container .big-container a {
   width: 100%;
   height: 100%;
-  border-radius: 100%;
   position: absolute;
 }
 
@@ -242,6 +235,7 @@ a {
 .fit-or-big .personalised {
   display: block;
   position: relative;
+  margin-top: 2.5vh;
   bottom: 1%;
 }
 
@@ -323,17 +317,27 @@ a {
   width: 100%;
   background-color: #ffffff;
   border-radius: 15px;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
           box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
   margin-bottom: 4vh;
 }
 
-.introduction .item-container .item1 img, .introduction .item-container .item2 img, .introduction .item-container .item3 img {
+.introduction .item-container .item1 .home-img-wrap, .introduction .item-container .item2 .home-img-wrap, .introduction .item-container .item3 .home-img-wrap {
+  width: 90%;
+  height: 40%;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.introduction .item-container .item1 .home-img-wrap img, .introduction .item-container .item2 .home-img-wrap img, .introduction .item-container .item3 .home-img-wrap img {
   width: 100%;
-  border-radius: 15px 15px 0 0;
+  height: 100%;
 }
 
 .introduction .item-container .item1 .item-text, .introduction .item-container .item2 .item-text, .introduction .item-container .item3 .item-text {
@@ -600,6 +604,9 @@ footer a:hover {
 
 /* Tablet-Landscape 992px */
 @media only screen and (min-width: 992px) and (orientation: landscape) {
+  .fit-or-big {
+    background-image: linear-gradient(160deg, #ffffff 50%, #5A1421 50.05%);
+  }
   .about-me .about-me-info .desc-img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -624,8 +631,15 @@ footer a:hover {
             justify-content: space-between;
   }
   .fit-or-big .images-container img {
-    width: 40vh;
-    height: 40vh;
+    width: 45vh;
+    height: 45vh;
+  }
+  .fit-or-big .personalised h2 {
+    margin-top: 3vh;
+    font-size: 1.5em;
+  }
+  .fit-or-big .personalised .home-down-arrow {
+    height: 3vh;
   }
   .fit-container .fit-container, .fit-container .big-container, .big-container .fit-container, .big-container .big-container {
     -webkit-transition: .2s ease-in-out;
