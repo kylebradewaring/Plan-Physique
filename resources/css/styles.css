@@ -604,9 +604,6 @@ footer a:hover {
 
 /* Tablet-Landscape 992px */
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  .fit-or-big {
-    background-image: linear-gradient(160deg, #ffffff 50%, #5A1421 50.05%);
-  }
   .about-me .about-me-info .desc-img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -631,8 +628,8 @@ footer a:hover {
             justify-content: space-between;
   }
   .fit-or-big .images-container img {
-    width: 45vh;
-    height: 45vh;
+    width: 50vw;
+    height: 60vh;
   }
   .fit-or-big .personalised h2 {
     margin-top: 3vh;
