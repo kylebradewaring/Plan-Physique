@@ -371,6 +371,10 @@ a {
   color: #5A1421;
 }
 
+.introduction .item-container .item1 .item-text p a:hover, .introduction .item-container .item2 .item-text p a:hover, .introduction .item-container .item3 .item-text p a:hover {
+  color: #23374d;
+}
+
 /* What We Do Page */
 .what-we-do {
   min-height: 90vh;

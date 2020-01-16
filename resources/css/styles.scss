@@ -286,7 +286,7 @@ a {
                         font-weight: 400;
                         color: #5A1421;
                         &:hover {
-                            color: ;
+                            color: #23374d;
                         }
                     }
                 }
@@ -499,8 +499,6 @@ footer {
 /* Tablet-Landscape 992px */ 
 
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-    .fit-or-big {
-    }
     .about-me {
         .about-me-info {
             .desc-img {
