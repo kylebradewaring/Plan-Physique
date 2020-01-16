@@ -302,9 +302,9 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 95%;
@@ -323,8 +323,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
-          box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 10px 10px 26px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 26px 0 rgba(0, 0, 0, 0.3);
   margin-bottom: 4vh;
 }
 
@@ -363,6 +363,12 @@ a {
 .introduction .item-container .item1 .item-text p, .introduction .item-container .item2 .item-text p, .introduction .item-container .item3 .item-text p {
   text-align: center;
   font-size: 1em;
+}
+
+.introduction .item-container .item1 .item-text p a, .introduction .item-container .item2 .item-text p a, .introduction .item-container .item3 .item-text p a {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #5A1421;
 }
 
 /* What We Do Page */
