@@ -407,7 +407,7 @@ a {
 
 /* What We Do Page */
 .what-we-do {
-  min-height: 90vh;
+  min-height: 70vh;
 }
 
 /* About Me Page */
@@ -574,6 +574,7 @@ a {
   background-color: #F2F4F3;
   padding: 1vw;
   margin: 1vw 1vw;
+  border-radius: 10px;
   -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
           box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
 }
@@ -617,6 +618,40 @@ footer a {
 
 footer a:hover {
   color: #C7CCD8;
+}
+
+/* Under Construction Page */
+.what-we-do {
+  min-height: 70vh;
+}
+
+.what-we-do .under-construction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 3vh auto;
+  width: 100%;
+}
+
+.what-we-do .under-construction img {
+  width: 90%;
+  margin-bottom: 3vh;
+}
+
+.what-we-do .under-construction .construction-text p {
+  max-width: 90%;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.what-we-do .under-construction .construction-text p a {
+  text-decoration: underline;
 }
 
 /* Mobile-Landscape 480px */
@@ -796,6 +831,39 @@ footer a:hover {
   }
   .about-me .interests .interests-main .interest {
     max-width: 45%;
+  }
+  /* Contact */
+  .info1 p {
+    font-size: 1.2em;
+  }
+  /* Under Construction Page */
+  .what-we-do {
+    min-height: 70vh;
+  }
+  .what-we-do .under-construction {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 3vh auto;
+    width: 100%;
+  }
+  .what-we-do .under-construction img {
+    width: 25%;
+    margin-bottom: 3vh;
+  }
+  .what-we-do .under-construction .construction-text p {
+    max-width: 90%;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .what-we-do .under-construction .construction-text p a {
+    text-decoration: underline;
   }
 }
 /*# sourceMappingURL=styles.css.map */
