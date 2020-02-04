@@ -640,6 +640,11 @@ footer {
         .item-container {
             .item1, .item2, .item3 {
                 max-width: 30%;
+                .item-text {
+                    p {
+                        font-size: 1.2em;
+                    }
+                }
             }
         }
     }
@@ -651,7 +656,6 @@ footer {
                 }
             .desc-img {
                 flex-wrap: nowrap;
-                
                 p {
                     text-align: left;
                     font-size: 1.3em;

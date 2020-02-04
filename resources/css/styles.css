@@ -776,6 +776,9 @@ footer a:hover {
   .introduction .item-container .item1, .introduction .item-container .item2, .introduction .item-container .item3 {
     max-width: 30%;
   }
+  .introduction .item-container .item1 .item-text p, .introduction .item-container .item2 .item-text p, .introduction .item-container .item3 .item-text p {
+    font-size: 1.2em;
+  }
   /* About Me */
   .about-me .about-me-info h1 {
     font-size: 3em;
