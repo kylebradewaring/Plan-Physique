@@ -697,7 +697,62 @@ footer a:hover {
 
 /* Desktop 1200px+ */
 @media only screen and (min-width: 1200px) {
+  /* Navigation */
+  #nav-bar {
+    height: 3vh;
+    max-height: 300px;
+    position: absolute;
+    top: 8vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    background-color: #eeeeee;
+    z-index: 999999;
+  }
+  #nav-bar ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 2vh;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #nav-bar ul li a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0 1vw;
+    font-family: interstate, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    color: #5A1421;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    height: 90%;
+  }
+  #nav-bar ul li a:hover {
+    color: #290a0f;
+  }
   /* Landing Page fit/big section */
+  .logo-header .page-logo {
+    margin-bottom: 3vh;
+  }
   .fit-or-big {
     width: 100%;
     min-height: 80vh;
@@ -833,8 +888,27 @@ footer a:hover {
     max-width: 45%;
   }
   /* Contact */
-  .info1 p {
+  .contact {
+    min-height: 78vh;
+  }
+  .contact .flex-container .info {
+    width: 40%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .flex-container .info .info1 {
+    width: 20%;
+  }
+  .contact .flex-container .info .info1 p {
     font-size: 1.2em;
+  }
+  /* Footer */
+  footer {
+    margin-bottom: 0;
   }
   /* Under Construction Page */
   .what-we-do {

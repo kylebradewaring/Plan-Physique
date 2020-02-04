@@ -575,7 +575,52 @@ footer {
 /* Desktop 1200px+ */ 
 
 @media only screen and (min-width: 1200px) {
+    /* Navigation */
+    #nav-bar {
+        height: 3vh;
+        max-height: 300px;
+        position: absolute;
+        top: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: #eeeeee;
+        z-index: 999999;
+        ul {
+            list-style: none;
+            display: flex;
+            margin-right: 2vh;
+            flex-shrink: 1;
+            margin: 0 auto;
+            width: 90%;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                a {
+                    text-decoration: none;
+                    text-align: center;
+                    padding: 0 1vw;
+                    font-family: interstate, sans-serif;
+                    font-weight: 500;
+                    font-size: 1em;
+                    color: #5A1421;
+                    transition: 0.2s ease-in-out;
+                    height: 90%;
+                    &:hover {
+                        color: #290a0f;
+                    }
+                }    
+            }
+        }
+    }
     /* Landing Page fit/big section */
+    .logo-header {
+        .page-logo {
+            margin-bottom: 3vh;
+        }
+    }
     .fit-or-big {
         width: 100%;
         min-height: 80vh;
@@ -704,12 +749,28 @@ footer {
     }
 
     /* Contact */
-    .info1 {
-        p {
-            font-size: 1.2em;
+    .contact {
+        min-height: 78vh;
+        .flex-container {
+            .info {
+                width: 40%;
+                justify-content: center;
+                align-items: center;
+                .info1 {
+                    width: 20%;
+                    p {
+                        font-size: 1.2em;
+                    }
+                }
+            }
         }
     }
-
+    
+    
+    /* Footer */
+    footer {
+        margin-bottom: 0;
+    }
     /* Under Construction Page */
     .what-we-do {
         min-height: 70vh;
