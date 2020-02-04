@@ -122,18 +122,23 @@ a {
 }
 
 /* landing Page */
-.page-logo {
+.logo-header {
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 1vh 0;
+}
+
+.logo-header .page-logo {
   display: block;
-  margin: 1vh auto;
-  width: 30vw;
+  margin: 0 auto;
+  width: 10vh;
   max-width: 180px;
 }
 
 .fit-or-big {
-  min-height: 95vh;
+  min-height: 80vh;
   padding-bottom: 2vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10.5%, white), color-stop(10.55%, #5a1421));
-  background: linear-gradient(180deg, white 10.5%, #5a1421 10.55%);
+  background-color: #ffffff;
 }
 
 .fit-or-big .header-main {
@@ -142,7 +147,7 @@ a {
 }
 
 .fit-or-big .header-main h1 {
-  color: #ffffff;
+  color: #5A1421;
   margin: 2vh auto;
   text-align: center;
   position: relative;
@@ -157,22 +162,25 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  overflow: hidden;
   margin: 0 auto;
   position: relative;
 }
 
 .fit-or-big .images-container img {
   width: 100%;
-  height: 60vw;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .fit-or-big .images-container .img-container {
@@ -235,14 +243,14 @@ a {
 .fit-or-big .personalised {
   display: block;
   position: relative;
-  margin-top: 2.5vh;
+  margin-top: 1.6vh;
   bottom: 1%;
 }
 
 .fit-or-big .personalised h2 {
   text-align: center;
   margin: 0.8vh auto;
-  color: #ffffff;
+  color: #23374d;
   font-size: 1.2em;
   font-weight: 500;
   max-width: 80%;
@@ -278,8 +286,20 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 80%;
+  max-width: 90%;
   margin: 2vh auto 5vh auto;
+}
+
+.introduction .summary-container img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 47%;
+     object-position: 47%;
+  border-radius: 50%;
+  margin-top: 2vh;
 }
 
 .introduction .summary-container h3 {
@@ -287,12 +307,16 @@ a {
   color: #23374d;
   font-weight: 600;
   padding: 1vh 0 1vh 0;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .introduction .summary-container p {
   text-align: center;
   font-size: 1em;
   font-weight: 300;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .introduction .item-container {
@@ -316,7 +340,7 @@ a {
 .introduction .item-container .item1, .introduction .item-container .item2, .introduction .item-container .item3 {
   width: 100%;
   background-color: #ffffff;
-  border-radius: 15px;
+  border-radius: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -329,6 +353,12 @@ a {
 }
 
 .introduction .item-container .item1 .home-img-wrap, .introduction .item-container .item2 .home-img-wrap, .introduction .item-container .item3 .home-img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 90%;
   height: 40%;
   margin: 0 auto;
@@ -336,8 +366,8 @@ a {
 }
 
 .introduction .item-container .item1 .home-img-wrap img, .introduction .item-container .item2 .home-img-wrap img, .introduction .item-container .item3 .home-img-wrap img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: auto;
 }
 
 .introduction .item-container .item1 .item-text, .introduction .item-container .item2 .item-text, .introduction .item-container .item3 .item-text {
@@ -434,11 +464,11 @@ a {
 }
 
 .about-me .about-me-info .desc-img img {
-  -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
-          box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
-  border-radius: 20px;
+  border-radius: 50%;
   position: relative;
-  width: 80vw;
+  max-width: 70vw;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0 2vw 3vh 2vw;
 }
 
@@ -477,12 +507,13 @@ a {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  border-radius: 15px;
+  border-radius: 10px;
   -webkit-box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
           box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.53);
   margin: 2vh 0 0 0;
   padding: 1vh 1vw;
   width: 100%;
+  background-color: #ffffff;
 }
 
 .about-me .interests .interests-main .interest img {
@@ -632,20 +663,31 @@ footer a:hover {
 /* Desktop 1200px+ */
 @media only screen and (min-width: 1200px) {
   /* Landing Page fit/big section */
+  .fit-or-big {
+    width: 100%;
+    min-height: 80vh;
+  }
   .fit-or-big .images-container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
   }
   .fit-or-big .images-container img {
-    width: 50vw;
-    height: 60vh;
+    width: 49.6vw;
+    height: auto;
   }
   .fit-or-big .personalised h2 {
     margin-top: 3vh;
     font-size: 1.5em;
   }
   .fit-or-big .personalised .home-down-arrow {
+    margin-top: 1.5vh;
     height: 3vh;
   }
   .fit-container .fit-container, .fit-container .big-container, .big-container .fit-container, .big-container .big-container {
@@ -676,20 +718,78 @@ footer a:hover {
   .fit-container .fit-container:hover, .fit-container .big-container:hover, .big-container .fit-container:hover, .big-container .big-container:hover {
     opacity: 1;
   }
+  .introduction {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 5vh 0 2vh 0;
+  }
+  .introduction .summary-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    margin: 2vh auto 5vh auto;
+  }
+  .introduction .summary-container img {
+    width: 300px;
+    height: 300px;
+    margin: 0 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 47%;
+       object-position: 47%;
+    border-radius: 50%;
+    margin: 2vh 3vw 0 0;
+  }
+  .introduction .summary-container .intro-text {
+    display: block;
+    max-width: 50vw;
+  }
+  .introduction .summary-container .intro-text h3 {
+    text-align: left;
+    color: #23374d;
+    font-weight: 600;
+    font-size: 3em;
+    padding: 1vh 0 2vh 0;
+    margin: 0 0;
+    max-width: inherit;
+  }
+  .introduction .summary-container .intro-text p {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0 0;
+    max-width: inherit;
+  }
   /* Landing page introduction and info cards  */
   .introduction .item-container .item1, .introduction .item-container .item2, .introduction .item-container .item3 {
     max-width: 30%;
   }
   /* About Me */
+  .about-me .about-me-info h1 {
+    font-size: 3em;
+  }
   .about-me .about-me-info .desc-img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
   .about-me .about-me-info .desc-img p {
     text-align: left;
+    font-size: 1.3em;
   }
   .about-me .about-me-info .desc-img img {
-    width: 25%;
+    width: 15%;
   }
   .about-me .interests .interests-main .interest {
     max-width: 45%;
